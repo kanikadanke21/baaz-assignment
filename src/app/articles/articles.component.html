@@ -1,0 +1,25 @@
+<div *ngFor="let article of listOfArticles">
+
+  <div class="row" align="justified">
+    <hr>
+    <div class="col-lg-2">
+      <img src="{{article.imgpath}}"
+           style="max-height: 45%;">
+    </div>
+
+    <div class="col-lg-7">
+      <h1>{{article.title}}</h1>
+
+      <p>{{article.post}}</p>
+      <small style="color: red"><b>{{article.author}}. </b></small>
+      <small>Was Published on <b>{{article.date}}</b></small>
+    </div>
+
+    <div class="col-lg-3 align-content-center">
+      Placeholder Content for side information.
+    </div>
+
+  </div>
+
+
+</div>
